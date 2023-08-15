@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap');
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cinzaClaro);
+  border-radius: 0.6vh;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 1vh;
+  position: absolute;
+  width: 1vh;
+  background-color: var(--corFundo);
+}
+
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Montserrat';
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.05vh;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+
+/* root */
+:root {
+  --corTexto: #fff;
+  --corFundo: #111;
+  --cinzaClaro: #333;
+}
+
+/*main*/
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+main h1{
+  color: #000;
+  font-size: 4vh;
+}
+main a{
+  color: #f0145c;
+}
+main p{
+  color: #000;
+}
+main input{
+  border-bottom: 1px solid #000;
+  padding: 8px;
+  color: #000;
+}
+main input:focus{
+  border-bottom: 1px solid #f0145c;
+}
+
+.btn{
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  width: 178px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #f0145c;
+  border: 1px solid #f0145c;
+  transition: 0.2s;
+  font-size: 2vh;
+}
+.btn:hover{
+  background-color: transparent;
+  color: #f0145c;
+  transition: 0.2s;
+}
